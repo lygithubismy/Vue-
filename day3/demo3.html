@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script src="./lib/vue-resource-1.3.4.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="getgetget" @click='gay'>
+        <input type="button" value="postpost" @click='pppp'>
+        <input type="button" value="jsonpjsonp" @click='JQKA'>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+
+            },
+            methods:{ 
+                gay(){
+                    this.$http.get('http://lovegf.cn:8899/api/getlunbo').then(function(res){
+                        console.log(res.body); 
+                        // 可以是res.data 但是body好点 因为他是result对象里的 
+                    })
+                },
+            
+            pppp(){
+                this.$http.post('http://lovegf.cn:8899/api/post',{},{emulateJSON:true}).then(function(res){
+                        console.log(res.body); 
+                        // 必须得设置第三个参数 {emulateJSON:true} 设置 提交的内容类型为普通表单数据格式
+
+                })
+            },
+            JQKA(){
+                this.$http.jsonp('http://lovegf.cn:8899/api/jsonp').then(res=>{
+                        console.log(res.body); 
+                       
+                        
+                })
+            }
+            }
+        })
+    </script>
+</body>
+</html>

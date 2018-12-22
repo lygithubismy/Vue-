@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script src="./lib/vue-resource-1.3.4.js"></script>
+    <style>
+        .yellow{
+            color:yellow;
+        }
+        .pink{
+            color:pink;
+        }
+        .active{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- <h1 :class="['yellow','active']">类样式！！！！！！！！！！！</h1> -->
+        <!-- <h1 class="yellow pink">类样式！！！！！！！！！！！</h1> -->
+        <!-- <h1 :class="['yellow',{active:flag}]">类样式！！！！！！！！！！！</h1> -->
+        <h1 :class="{}">类样式！！！！！！！！！！！</h1>
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                flag:false,
+                classArr:['yellow','pink'],
+                // 适合多个固定样式一样渲染
+                classObj:{yellow:true,pink:true,active:true}
+                // 适合多个样式动态转换样式
+                // 也可以直接传此对象或者数组中的单的样式
+            },
+            methods:{
+
+            }
+
+        })
+    </script>
+</body>
+</html>
