@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/vue-2.4.0.js"></script>
+    <script src="./lib/vue-resource-1.3.4.js"></script>
+</head>
+<body>
+        <!-- <div id="app"> 
+            <p>{{ msg | msgFor }}</p>
+            </div>
+            <script>
+                Vue.filter('msgFor',function(msg){
+                  return  msg.replace(/傻/g,'狗')
+                //   在这里修改的值就是放到插入值中
+                // replace除了可以接收一个字符串 还可以接收正则表达式
+                })
+
+                
+                var vm = new Vue({
+                    el:'#app',
+                    data:{
+                        msg:'傻人有傻福，傻逼没有！ ---鲁迅'
+                    },
+                    methods:{
+                        
+                    }
+                })
+            </script> -->
+
+<div id="app"> 
+    <!-- 第一个值可以传参  多个 -->
+    <!-- 过滤器可以多次调用 可以在此加一个 |  第一个和第二个值替换以后 再找第三个值替换 -->
+        <p>{{ msg | msgFor('丑','111')  }}</p>
+        </div>
+        <script>
+            Vue.filter('msgFor',function(msg,arg,arg1){
+              return  msg.replace(/傻/g,arg + arg1)
+            //   在这里修改的值就是放到插入值中
+            // replace除了可以接收一个字符串 还可以接收正则表达式
+            })
+
+            
+            var vm = new Vue({
+                el:'#app',
+                data:{
+                    msg:'傻人有傻福，傻逼没有！ ---鲁迅'
+                },
+                methods:{
+                    
+                }
+            })
+        </script>
+</body>
+</html>
