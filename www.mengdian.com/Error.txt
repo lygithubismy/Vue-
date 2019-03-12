@@ -1,0 +1,14 @@
+﻿文件下载网址  =>  文件保存路径
+http://www.mengdian.com/img/icon-socialmedia.png?20150317  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\icon-socialmedia.png
+http://www.mengdian.com/images/fedc60811caffcdef88a1c09f74828bf.jpg  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\picture\fedc60811caffcdef88a1c09f74828bf.jpg
+http://www.mengdian.com/images/411ca2ff48b9ad1ba78f19163aa1f8f1.jpg  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\picture\411ca2ff48b9ad1ba78f19163aa1f8f1.jpg
+http://www.mengdian.com/img/icon-sprite.png?2014-12-31-1  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\icon-sprite_1.png
+http://www.mengdian.com/img/introduce-bg.png?2015-3-23  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\introduce-bg.png
+http://www.mengdian.com/img/attentionBg.jpg?2014-12-31  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\attentionbg.jpg
+http://www.mengdian.com/images/14a696011ece159ded4195e6957310da.jpg  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\picture\14a696011ece159ded4195e6957310da.jpg
+http://www.mengdian.com/images/d6db2dd59b675eef0db4a856199adf69.jpg  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\picture\d6db2dd59b675eef0db4a856199adf69.jpg
+https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/base/base_z231ecc.png  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\base_z231ecc.png
+http://www.mengdian.com/img/btn-bg.png?2014-12-31  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\btn-bg.png
+http://www.mengdian.com/img/login-bg.png?2014-12-31  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\login-bg.png
+http://www.mengdian.com/img/icon-sprite.png?2015-01-01  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\images\icon-sprite.png
+http://www.mengdian.com/images/c4903810ec534773f0d8f49f18e6c079.jpg  =>  C:\Users\60240\Desktop\学习资料\插件\www.mengdian.com\picture\c4903810ec534773f0d8f49f18e6c079.jpg

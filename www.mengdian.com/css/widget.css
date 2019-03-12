@@ -1,0 +1,304 @@
+﻿.wrap-bgmg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.good-name{
+     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.banner-ul li.banner-li1{
+    background:none;
+    height: auto;
+}
+.activity img {
+    width: 100%;
+}
+.container .activity.wrap-head-pic .activity-header{display: none;}
+.container .activity.wrap-head-pic{
+    width:100%;
+}
+.activity.wrap-head-pic a{
+    display: block;
+    width:100%;
+}
+.activity.wrap-head-pic img{
+    width:100%;
+    max-width:none;
+}
+.activity .activity-header {
+    height: 76px;
+    line-height: 76px;
+    font-size: 22px;
+    color: #000;
+}
+
+.layout .content .activity-header .icon-left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 14px;
+    background-color: #ff534c;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+
+.goods-img{
+    background-size: cover;
+}
+
+/************************列表式**********************/
+
+.activity-conntent .list-four-pic {
+    overflow: hidden;
+}
+
+.activity-conntent .list-four-pic>li {
+    float: left;
+    width: 208px;
+    padding: 14px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.activity-conntent .list-four-pic>li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.activity-conntent .list-four-pic>li:nth-child(1),
+.activity-conntent .list-four-pic>li:nth-child(2),
+.activity-conntent .list-four-pic>li:nth-child(3),
+.activity-conntent .list-four-pic>li:nth-child(4) {
+    /*margin-bottom: 0;*/
+}
+
+.activity-conntent .list-four-pic>li img {
+    width: 100%;
+    height: 208px;
+}
+
+
+/*public*/
+.wrap-qrcode{
+    position: relative;
+}
+.wrap-qrcode .qr-logo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/qrcode_logo.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+/********************一带三*************************/
+
+.list-one-three {
+    overflow: hidden;
+}
+
+.list-one-three.item {
+    display: inline-block;
+    width: 486px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.list-one-three:nth-of-type(even) {
+    margin-left: 13px;
+}
+
+.list-one-three .wrap-img {
+    padding: 10px;
+}
+
+.list-one-three .wrap-img img {
+    display: block;
+    width: 466px;
+}
+
+.list-one-three .list-goods {
+    overflow: hidden;
+}
+
+.list-one-three .list-goods .item-goods {
+    float: left;
+    width: 140px;
+    padding: 11px;
+}
+
+.list-one-three .list-goods .item-goods .good-pic {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+
+
+/*******************二维码遮罩*******************/
+
+.list-one-three .good-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 0;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.list-one-three .item-goods:hover .good-mask {
+    height: 100%;
+}
+
+.list-one-three .good-mask .wrap-qrcode {
+    width: 100px;
+    margin: 11px auto 0;
+}
+
+.list-one-three .good-mask h3 {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.list-one-three .good-name {
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    padding-top: 5px;
+    height: 40px;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.list-one-three .good-price {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.list-one-three .good-price .price {
+    font-size: 18px;
+    color: #ff534c;
+    margin-right: 5px;
+}
+
+.list-one-three .good-price .del-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+
+/********************一带六**********************/
+
+.list-one-six{
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+
+.list-one-six .item:nth-child(1) {
+    /*margin-bottom: 0;*/
+}
+
+.list-one-six{
+    overflow: hidden;
+}
+
+.list-one-six .wrap-img {
+    width: 308px;
+    padding: 10px 0 10px 10px;
+    height: 684px;
+    float: left;
+}
+
+.list-one-six .wrap-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.list-one-six .list-goods {
+    float: left;
+    height: 684px;
+    width: 672px;
+    overflow: hidden;
+}
+
+.list-one-six .list-goods .item-goods {
+    float: left;
+    width: 196px;
+    height: 342px;
+    padding: 14px;
+}
+
+.list-one-six .list-goods .good-pic {
+    position: relative;
+    width: 196px;
+    height: 196px;
+    overflow: hidden;
+}
+
+
+/************二维码遮罩***********/
+
+.list-one-six .good-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 0;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.list-one-six .item-goods:hover .good-mask {
+    height: 100%;
+}
+
+.list-one-six .good-mask .wrap-qrcode {
+    width: 150px;
+    margin: 10px auto 0;
+}
+
+.list-one-six .good-mask h3 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+
+.list-one-six .good-name {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.list-one-six .good-price {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.list-one-six .good-price .price {
+    font-size: 18px;
+    color: #ff534c;
+    margin-right: 5px;
+}
+
+.list-one-six .good-price .del-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
