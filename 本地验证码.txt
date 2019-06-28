@@ -1,0 +1,63 @@
+
+1.我们使用element ui 的表单验证，可以控制输入的字符串格式，当我们做验证码的时候，希望只输入4个字符便不能输了，当输入大于四个字符时就截取掉后面的，并赋值给输入框
+--------------------- 
+vcode: [
+          {required: true, validator: validateVcode, triger: 'blur'}
+        ]
+data () 中定义：
+    var validateVcode = (rule, value, callback) => {
+      // 将用户输入数字转成字符串，同时转换成大写
+      value = value + ''
+      if (value.length > 4) {
+        value = value.substring(0, 4)
+        this.$set(this.loginInfo, 'vcode', value)
+      }
+    }
+
+
+
+2.随机生成验证码，在页面一加载完毕就执行该函数生成一个验证码。
+--------------------- 
+ mounted () {
+    this.generatedCode()
+  },
+
+在methods中：
+    generatedCode () {
+      const random = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+        'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+      let code = ''
+      for (let i = 0; i < 4; i++) {
+        let index = Math.floor(Math.random() * 36)
+        code += random[index]
+      }
+      this.ccode = code
+    }
+
+3.当用户点击生成码可以生成一个新的验证码，所以给该生成码标签绑定一个点击事件，在点击 后执行生成验证码函数。
+--------------------- 
+// 点击生成验证码
+    handleCode () {
+      this.generatedCode()
+    }
+
+4.当我们输入验证码完成之后，需要验证输入的和我们生成的是否一致，所以需要一个判断输入验证码是否正确的函数。
+--------------------- 
+
+// 判断验证码是否输入准确
+    checkCode () {
+      let vcode = this.loginInfo.vcode
+      vcode = vcode.toUpperCase()
+      let ccode = this.ccode
+      ccode = ccode.toUpperCase()
+      if (vcode !== ccode) {
+        this.$message.error('Please enter the correct verification code!')
+        this.$set(this.loginInfo, 'vcode', '')
+        this.$set(this.loginInfo, 'password', '')
+      } else {
+        return 1
+      }
+    },
+
+5.
+--------------------- 

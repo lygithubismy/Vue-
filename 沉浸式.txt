@@ -1,0 +1,10 @@
+"plus": {  
+    "statusbar": {  
+        "immersed": true  
+    }  
+}  
+
+index.html meta标签中name为viewport 设置 viewport-fit = cover
+
+使用hbuilder打包时：
+	https://blog.csdn.net/qq_23260639/article/details/79564104

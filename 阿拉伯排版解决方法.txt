@@ -1,0 +1,7 @@
+html标签中添加 dir="rtl" 属性
+<html DIR=RTL>   改变文档的书写顺序
+
+http://blog.baiwand.com/?post=212 
+
+i18n 
+element ui
