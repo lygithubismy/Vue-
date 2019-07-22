@@ -6,6 +6,8 @@ import router from './router'
 // import VueI18n from 'vue-i18n'
 import i18n from './i18n/i18n'
 
+import store from '@/vuex/store'
+
 import ElementUI from 'element-ui'
 Vue.use(ElementUI)
 import 'element-ui/lib/theme-chalk/index.css'
@@ -20,5 +22,6 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
-  i18n
+  i18n,
+  store  //全局注册vuex
 })

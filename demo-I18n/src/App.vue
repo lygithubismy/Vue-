@@ -3,6 +3,7 @@
     <!-- <img src="./assets/logo.png"> -->
 
     <router-view />
+    
     <!-- {{$t('message')}} -->
     <span>{{$t('text.globalCurrency')}}</span>
     <p>{{$t("title.message")}}</p>
