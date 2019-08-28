@@ -9,23 +9,23 @@ const store = new Vuex.Store({
         count:1
     },
     getters:{  //改变初始值count
-        changeGetters:state =>{
-            return state.conut + 1;
+        getStateCount:state =>{
+            return state.conut + 2;
         }
     },
     mutations:{
         addvuex(state){
-            state.count = state.count + 1;
+            state.count = state.count + 2;
         },
         delvuex(state,n){
             state.count = state.count - n;
         }
     },
     actions:{
-        add(centext){
+        setadd(centext){
             centext.commit('addvuex');
         },
-        del(centext,n){
+        setdel(centext,n){
             centext.commit('delvuex',n);
         }
     }

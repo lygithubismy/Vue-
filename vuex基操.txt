@@ -1,0 +1,4 @@
+https://baijiahao.baidu.com/s?id=1618794879569468435&wfr=spider&for=pc
+
+
+注意***  ： 在使用dispatch时 括号里的托管的参数不是放到store.js里的函数，而是点击事件中的点击事件函数
